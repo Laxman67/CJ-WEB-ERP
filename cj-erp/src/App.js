@@ -82,8 +82,11 @@ function App() {
 
   return (
     <div className="App">
-<nav>
- <h1>Chauhan Jewellers ERP Solution..</h1>
+<nav className='navbar'>
+
+ {/* <img className='logo' src="https://miro.medium.com/v2/resize:fit:1200/1*stkti7KhdkPOEu2WQ4x3gQ.png"/> */}
+ <img className='logo' src="https://cdn-icons-png.flaticon.com/512/5129/5129557.png"/>
+ <h1 style={{fontSize:"2.5rem"}} >CHAUHAN JEWELLERS ERP Solution</h1>
 </nav>
     </div>
   );
