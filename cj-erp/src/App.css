@@ -19,6 +19,16 @@
 
 .logo{
 
-  width:130px;
+  width:100px;
   height: auto;
+}
+
+
+.banner{
+  width: 100%;
+  display: flex;
+}
+.banner img{
+  width: 50%;
+  margin:  0 auto;
 }
