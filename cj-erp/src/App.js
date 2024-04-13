@@ -1,8 +1,7 @@
 
 import './App.css';
 import { useState } from 'react';
-import pendingButton from './components/pendingButton';
-import navBar from './components/navBar';
+import TableComponent from './components/TableComponent';
 
 function App() {
 
@@ -82,6 +81,28 @@ function App() {
   ]
 }]);
 
+// console.log(data.map(({id,name,address,gender,items})=>`${name},${id},${address}, ${gender},${items.map((item)=>item.value
+// )}`));
+
+// 0
+// : 
+// "John,1,123 Main St, Male,10,15,20,25,30"
+// 1
+// : 
+// "Alice,2,456 Elm St, Female,18,22,27,33,38"
+// 2
+// : 
+// "Emily,3,789 Oak St, Female,12,17,21,28,34"
+// 3
+// : 
+// "Michael,4,101 Pine St, Male,16,19,23,29,36"
+// 4
+// : 
+// "Sophia,5,202 Maple St, Female,14,20,24,31,37"
+// length
+// : 
+// 5
+
   return (
    <>
  <div className="App">
@@ -95,7 +116,12 @@ function App() {
     <section className='banner'>
       <img  src="https://miro.medium.com/v2/resize:fit:1200/1*stkti7KhdkPOEu2WQ4x3gQ.png"/>
     </section>
+
+    {/* Table  */}
+    <TableComponent data={data}/>
         </div>
+
+      
    </>
   );
 }
