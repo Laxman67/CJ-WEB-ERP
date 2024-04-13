@@ -1,6 +1,8 @@
 
 import './App.css';
 import { useState } from 'react';
+import pendingButton from './components/pendingButton';
+import navBar from './components/navBar';
 
 function App() {
 
@@ -81,18 +83,20 @@ function App() {
 }]);
 
   return (
-    <div className="App">
-<nav className='navbar'>
-
- 
- <img className='logo' src="https://cdn-icons-png.flaticon.com/512/5129/5129557.png"/>
- <h1 style={{fontSize:"2.5rem"}} >CHAUHAN JEWELLERS ERP Solution</h1>
-</nav>
-
-<section className='banner'>
-  <img  src="https://miro.medium.com/v2/resize:fit:1200/1*stkti7KhdkPOEu2WQ4x3gQ.png"/>
-</section>
-    </div>
+   <>
+ <div className="App">
+    <nav className='navbar'>
+    
+     
+     <img className='logo' src="https://cdn-icons-png.flaticon.com/512/5129/5129557.png"/>
+     <h1 style={{fontSize:"2.5rem"}} >CHAUHAN JEWELLERS ERP Solution</h1>
+    </nav>
+    
+    <section className='banner'>
+      <img  src="https://miro.medium.com/v2/resize:fit:1200/1*stkti7KhdkPOEu2WQ4x3gQ.png"/>
+    </section>
+        </div>
+   </>
   );
 }
 
